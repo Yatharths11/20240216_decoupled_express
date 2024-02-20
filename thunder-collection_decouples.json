@@ -1,0 +1,166 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "decouples",
+    "dateExported": "2024-02-20T09:33:07.650Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "42f80f48-6bcd-45c6-95f7-fdc3a5eb98d8",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "search",
+            "url": "localhost:3000/search?q=CasualCanvasBag",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-20T02:06:44.849Z",
+            "modified": "2024-02-20T05:22:03.143Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "CasualCanvasBag",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_id\": 205,\n    \"product_name\": \"PlainPencilSet\",\n    \"description\": \"Basic pencil set for writing and drawing needs\",\n    \"stocks\": 110,\n    \"price\": 5.99,\n    \"image_url\": \"https://example.com/plain_pencil_set.jpg\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "50efdc54-61e0-4d9e-8bfb-66d72a3a8e3c",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "update product",
+            "url": "localhost:3000/product/update/205",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-02-20T05:22:17.753Z",
+            "modified": "2024-02-20T06:25:36.090Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_id\": 205,\n    \"product_name\": \"PlainPencilSets\",\n    \"description\": \"Basic pencil set for writing and drawing needs for you\",\n    \"stocks\": 110,\n    \"price\": 5.99,\n    \"image_url\": \"https://example.com/plain_pencil_set.jpg\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "05c76f39-943b-456b-a3a6-ba304ff44421",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "searchSingelProduct",
+            "url": "localhost:3000/product/205",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-20T05:23:30.883Z",
+            "modified": "2024-02-20T05:24:23.836Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "033552f3-9a24-434c-b885-71c46c4202b1",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "cancel order",
+            "url": "localhost:3000/cancel/692",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-20T05:24:34.347Z",
+            "modified": "2024-02-20T09:30:44.350Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f45339eb-59fb-467d-ae07-b15ef3a106db",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "add product",
+            "url": "localhost:3000/product/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-20T05:38:11.891Z",
+            "modified": "2024-02-20T06:12:06.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_id\":211,\n  \"stocks\":10,\n  \"product_name\":\"JustAProduct\",\n  \"description\":\"blah blah blah\",\n  \"price\":9.99,\n  \"image_url\":\"www.example.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "904c6ae5-f8ce-4527-9cd1-70002fa40771",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "checking checkout",
+            "url": "localhost:3000/checkout",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-20T05:48:59.150Z",
+            "modified": "2024-02-20T08:37:10.975Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"order_id\":456\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a492047-584a-4eb3-bb61-945ec1f098f0",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "order",
+            "url": "localhost:3000/order",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-20T06:05:11.091Z",
+            "modified": "2024-02-20T09:14:40.255Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_id\":210,\n  \"quantity\":70\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fdb116d0-f79b-4201-9a6d-a2421ee65a3f",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "delete product",
+            "url": "localhost:3000/delete/206",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-02-20T06:24:31.356Z",
+            "modified": "2024-02-20T06:27:10.253Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c887d76c-f9ab-40a1-8874-19f0b4de96f9",
+            "colId": "63cd766b-f2ea-4fb9-97a5-d02e48c42698",
+            "containerId": "",
+            "name": "checkStatus",
+            "url": "localhost:3000/status/456",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-02-20T08:57:07.773Z",
+            "modified": "2024-02-20T08:58:55.707Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
